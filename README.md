@@ -4,7 +4,7 @@ This repository contains an Aurix application bundle, `Aurix-app.zip`. The proje
 
 ## Inspecting the bundle
 
-Download or clone the repository, then extract `Aurix-app.zip` and review its files for project documentation, a package manifest, and platform configuration.
+Download or clone the repository, then extract `Aurix-app.zip` and review its files for project documentation, a package manifest, and platform configuration. Use any run instructions found in the extracted project rather than assuming commands from this repository root.
 
 ## Repository contents
 
