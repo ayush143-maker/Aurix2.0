@@ -8,6 +8,10 @@ Download or clone the repository, extract `Aurix-app.zip`, and review its files 
 
 To personalize visible content, theme, or assets, first locate the relevant files inside the extracted bundle and follow its own documentation. Preserve existing relative paths when editing or moving assets; if a file must move, update its references. This repository snapshot does not identify particular screens, asset names, or settings to edit.
 
+## Contributor handoff
+
+Keep edits scoped to the relevant files inside `Aurix-app.zip` after inspecting the extracted project. Preserve filenames and relative references unless a move or rename is necessary, and update affected references if paths change. Summarize what changed and identify the affected files in the handoff. Manually review the result using the extracted project's documented setup before publishing; the checklist below describes checks to perform, not results already verified.
+
 ## Troubleshooting
 
 Perform these checks after extracting the archive; they are diagnostic steps, not reports of known problems.
