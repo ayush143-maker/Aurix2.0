@@ -57,3 +57,8 @@ These are future checks using the extracted project's documented setup, not comp
 - [ ] Check text alternatives for meaningful images and reduced-motion behavior if motion is present.
 
 No review results are recorded here; complete the checks after identifying the app type and supported platforms.
+
+## Final release review
+
+- Inspect `Aurix-app.zip` and confirm the archive contains the version you intend to share.
+- Review the published result once on a narrow screen and once on a wider screen; treat this as a release check, not an automated test report.
