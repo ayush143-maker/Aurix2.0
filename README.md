@@ -8,6 +8,16 @@ Download or clone the repository, then extract `Aurix-app.zip` and review its fi
 
 To personalize visible content, theme, or assets, first locate the relevant files inside the extracted bundle and follow its own project documentation. Preserve existing relative paths when editing or moving assets; if a file must move, update the references that point to it. The archive is the source available in this snapshot, so the repository root does not identify particular screens, asset names, or settings to edit.
 
+## Asset and loading review checklist
+
+These are actions to perform after extracting the archive, not verified results or performance measurements:
+
+- [ ] Use the extracted project's documentation and source files to identify image, audio, video, and font references. Confirm each local reference matches a file in the bundle and the expected path.
+- [ ] Check whether bundled assets are used before removing them; search references in the extracted source and configuration first.
+- [ ] Look for unusually large media relative to its use. Consider resizing or compressing assets where suitable, then check the resulting appearance or playback.
+- [ ] Inspect external font, script, and other remote-resource references in the extracted project. Confirm they are intentional and necessary, and note whether the app remains usable if a resource cannot load.
+- [ ] Follow the extracted project's documented setup to review asset loading in the app type and platforms it supports.
+
 ## Manual review checklist
 
 These are actions to perform, not verified results:
