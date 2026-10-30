@@ -62,3 +62,7 @@ No review results are recorded here; complete the checks after identifying the a
 
 - Inspect `Aurix-app.zip` and confirm the archive contains the version you intend to share.
 - Review the published result once on a narrow screen and once on a wider screen; treat this as a release check, not an automated test report.
+
+## Repository map
+
+- `Aurix-app.zip` — application archive.
