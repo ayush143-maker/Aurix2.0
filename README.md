@@ -17,4 +17,15 @@ These are actions to perform, not verified results:
 - [ ] Follow the extracted project's documented instructions to open or run the app, then try the interactions described there and any visible controls.
 - [ ] Inspect the interface at narrow and wide viewport or device sizes supported by the extracted project.
 
-No review results are recorded here; record them separately after carrying out the checklist.
+## Accessibility review checklist
+
+First identify the app type, supported platforms, and interactive screens inside `Aurix-app.zip`. These are future checks to perform using the extracted project's documented setup, not compliance claims or verified results:
+
+- [ ] Use a keyboard where the app supports one to reach interactive controls and operate them; check the order is understandable. If the bundle is a native app, include a hardware keyboard where supported.
+- [ ] Check that focused controls have a visible focus indicator against the interface backgrounds.
+- [ ] Check that buttons, navigation, fields, and icon-only controls have meaningful accessible names appropriate to their purpose.
+- [ ] Review text and control contrast against their backgrounds, including any themes or screens found in the extracted bundle.
+- [ ] For meaningful images found in the bundle, check that suitable text alternatives are provided; distinguish decorative images from informative ones.
+- [ ] If transitions or other motion are present, check that the app responds appropriately to the platform's reduced-motion preference.
+
+No review results are recorded here; record them separately after carrying out the checklists.
