@@ -8,9 +8,21 @@ Download or clone the repository, extract `Aurix-app.zip`, and review its files 
 
 To personalize visible content, theme, or assets, first locate the relevant files inside the extracted bundle and follow its own documentation. Preserve existing relative paths when editing or moving assets; if a file must move, update its references. This repository snapshot does not identify particular screens, asset names, or settings to edit.
 
+## Deployment-readiness checklist
+
+Complete these checks only after inspecting the extracted project. They are recommendations, not evidence that a build or deployment exists or that any checks have passed.
+
+- [ ] Identify the app type, supported targets, documented build procedure, and expected output location from the extracted project's files. The repository root contains only the README and `Aurix-app.zip`; it does not establish a publishable root directory, entry page, build command, or output directory.
+- [ ] Select the output produced for the intended target, following the extracted project's documentation. Do not assume that the archive itself or the repository root is the finished application output.
+- [ ] Check local asset references in the extracted source and configuration. Include each required asset at the referenced relative path in the target output, or update the reference if the file is moved; then verify the paths in the built or prepared target.
+- [ ] The repository root does not list an environment template. Inspect the extracted bundle for a template before configuring environment values. If a template exists, follow its documented variable names and use real local values only where appropriate; do not invent variables or commit credentials. If no template or instructions exist, do not assume environment configuration is required.
+- [ ] Before publishing, preview or run the prepared target using the extracted project's documented setup. Check the actual supported platform rather than inferring app behavior from the archive name or appearance.
+- [ ] After publishing or distributing, open or install that version in its intended environment and review it again. Confirm that its entry point loads, visible content and controls behave as observed, and required assets are available. For web targets, check the browser Console and Network panel; for native targets, use the diagnostics described by the extracted project.
+- [ ] Repeat the review at relevant viewport or device sizes. Record issues and the target on which they occur; no compatibility results are recorded here.
+
 ## Contributor handoff
 
-Keep edits scoped to the relevant files inside `Aurix-app.zip` after inspecting the extracted project. Preserve filenames and relative references unless a move or rename is necessary, and update affected references if paths change. Summarize what changed and identify the affected files in the handoff. Manually review the result using the extracted project's documented setup before publishing; the checklist below describes checks to perform, not results already verified.
+Keep edits scoped to the relevant files inside `Aurix-app.zip` after inspecting the extracted project. Preserve filenames and relative references unless a move or rename is necessary, and update affected references if paths change. Summarize what changed and identify the affected files in the handoff. Manually review the result using the extracted project's documented setup before publishing; the checklist above describes checks to perform, not results already verified.
 
 ## Troubleshooting
 
