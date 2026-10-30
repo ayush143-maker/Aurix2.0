@@ -1,15 +1,11 @@
 # Aurix2.0
 
-This repository currently stores the Aurix-app.zip bundle at its root rather than an unpacked source tree. Extract the archive locally to inspect its contents; a build workflow cannot be verified from the root files alone.
+This repository contains an Aurix application bundle named Aurix-app.zip. The source is stored as an archive rather than as an unpacked project tree, so the repository root does not currently expose a package manifest, application entry point, or verified run command.
 
-## Status
+## Inspecting the bundle
 
-No application run command can be verified from the current root files. Review the listed files before integrating this repository into a larger project.
+Download or clone the repository, then extract Aurix-app.zip locally. Review the extracted files before choosing a setup process. In particular, look for the package manifest, project documentation, and platform configuration inside the archive.
 
 ## Repository scope
 
-The files currently present do not establish a reliable application launch command. This README records the repository state without assuming a framework or build process that is not visible.
-
-## Suggested next steps
-
-Review the current files and commit history to determine the intended role of the repository. If runnable source is added, document the runtime, dependency installation, required configuration, launch command, and a repeatable test.
+The archive is the source of truth for this snapshot. No build or launch instructions are listed here because they cannot be confirmed from the files currently visible at the repository root. Once the bundle is unpacked into a maintained source tree, its framework, dependencies, and development commands can be documented directly.
