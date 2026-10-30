@@ -8,6 +8,12 @@ Download or clone the repository, extract `Aurix-app.zip`, and review its files 
 
 To personalize visible content, theme, or assets, first locate the relevant files inside the extracted bundle and follow its own documentation. Preserve existing relative paths when editing or moving assets; if a file must move, update its references. This repository snapshot does not identify particular screens, asset names, or settings to edit.
 
+## Configuration and data handling
+
+The repository root lists only the README and `Aurix-app.zip`; it does not identify an environment template or configuration file. After extracting the bundle, inspect its documentation and configuration locally before changing or sharing them. Do not assume environment-variable names, backend settings, or services that are not documented by the extracted project.
+
+Keep real credentials and private data out of tracked files and examples. If the bundle includes a template, preserve it as a template with placeholder values only. Any value compiled into or delivered to a browser or mobile client should be treated as visible to that client’s users, not as a secret. If you find a credential in tracked content, remove or replace it and rotate it where applicable; a later deletion may not remove it from repository history. Use non-sensitive sample data when reviewing the app unless its data handling has been established.
+
 ## Browser, platform, and asset review checklist
 
 These are actions to perform after extracting the archive, not verified results. No browser or platform compatibility testing is recorded here.
@@ -18,6 +24,7 @@ These are actions to perform after extracting the archive, not verified results.
 - [ ] Check whether bundled assets are used before removing them; search source and configuration references first. Review unusually large media in relation to its use before considering resizing or compression.
 - [ ] Compare mobile-sized and desktop-sized layouts where the extracted project supports them. Check that content and controls remain visible, readable, and usable.
 - [ ] Follow the extracted project's instructions to try its visible interactions. Do not infer features or services from the archive name or appearance.
+- [ ] Before committing changes to the extracted project, check tracked configuration and sample files for real credentials or sensitive data. Treat values included in client builds as public.
 
 ## Accessibility review checklist
 
